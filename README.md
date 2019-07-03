@@ -12,7 +12,7 @@ sqlcmd -S localhost -U SA -P 'passW@rd' -d db -i DDL-DML.sql
 python run.py  
 ### Results:
 Total number of files processed = 15,770  
-Total number of rows in FactStore table created = 1,547,897  
+Total number of rows created in FactStore table = 1,547,897  
 ## Part 2: Database queries
 ### Part 2A:
 ### Query:
