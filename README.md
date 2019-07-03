@@ -20,15 +20,15 @@ SELECT DimProducts.ProductCategoryName,AVG(FactStore.OnHandQty) AS OnHandQty FRO
 LEFT JOIN DimProducts ON FactStore.ProductID = DimProducts.ProductID  
 GROUP BY ProductCategoryName;
 ### Results:
-ProductCategoryName            OnHandQty  
------------------------------- -----------  
-Audio                                   21  
-Cameras and camcorders                  20  
-Cell phones                             62  
-Computers                               21  
-Games and Toys                          75  
-Home Appliances                         20  
-Music, Movies and Audio Books           18  
-TV and Video                            20  
+| ProductCategoryName           | OnHandQty |  
+|-------------------------------|-----------|  
+| Audio                         |    21     |
+| Cameras and camcorders        |    20     |
+| Cell phones                   |    62     |
+| Computers                     |    21     |
+| Games and Toys                |    75     | 
+| Home Appliances               |    20     |
+| Music, Movies and Audio Books |    18     |
+| TV and Video                  |    20     |
 ### Part 2B:
 ### Query: 
