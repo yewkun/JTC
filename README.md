@@ -32,3 +32,14 @@ GROUP BY ProductCategoryName;
 | TV and Video                  |    20     |
 ### Part 2B:
 ### Query: 
+SELECT DimStores.StoreType,AVG(FactStore.OnHandQty) AS OnHandQty FROM FactStore  
+LEFT JOIN DimStores ON FactStore.StoreID = DimStores.StoreID  
+GROUP BY StoreType;  
+### Results:
+| StoreType     | OnHandQty | 
+|---------------|-----------|
+| NULL          |    25     |
+| Catalog       |    59     |
+| Online        |    47     |
+| Reseller      |    37     |
+| Store         |    24     |
